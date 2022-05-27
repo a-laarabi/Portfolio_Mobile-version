@@ -1,6 +1,13 @@
 .about {
   display: none;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+  text-decoration: none;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -11,16 +18,60 @@ ul {
 }
 
 .work {
-  
+  background-color: #e5e5e5;
+  min-width: 415px;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+}
+
+ul {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.work .project{
+  background-color: #ffffff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 16px;
+  margin-top: 88px;
 }
 
 .work img{
   border-radius: 8px;
+  margin: auto;
+  display: flex;
+  align-items: center;
 }
 
 .work h3 {
   font-weight: 700;
   font-size: 32px;
+}
+
+.work h3 a {
+  color: #172B4D;
+}
+
+.project-detail {
+  display: flex;
+}
+
+.project-detail li{
+  margin: 10px;
+}
+
+.project-language  {
+  margin: 10px 0;
+  display: flex;
+}
+
+.project-language li{
+  background-color: #EBEBFF;
+  border-radius: 8px;
+  padding: 4px 12px;
+  color: #6070FF;
+ margin: 2px;
 }
 
 .canopy {
@@ -33,11 +84,25 @@ ul {
   list-style-type: circle;
   font-weight: 600;
   font-size: 13px;
-  color: #7A869A;
+  color: #7a869a;
 }
 
 .work p {
-    font-weight: 400;
-    font-size: 15;
-    color: #344563;
-  }
+  font-weight: 400;
+  font-size: 15;
+  color: #344563;
+  width: 80%;
+}
+
+.see {
+  color: #396DF2;
+  font-weight: 500;
+  font-size: 17px;
+  border: 2px solid #396DF2;
+  width: 120px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
