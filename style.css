@@ -1,0 +1,43 @@
+.about {
+  display: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.work {
+  
+}
+
+.work img{
+  border-radius: 8px;
+}
+
+.work h3 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.canopy {
+  font-weight: 600;
+  font-size: 13px;
+  color: #344563;
+}
+
+.project_info {
+  list-style-type: circle;
+  font-weight: 600;
+  font-size: 13px;
+  color: #7A869A;
+}
+
+.work p {
+    font-weight: 400;
+    font-size: 15;
+    color: #344563;
+  }
