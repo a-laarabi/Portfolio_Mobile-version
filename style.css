@@ -95,6 +95,7 @@ ul {
 }
 
 .see {
+  color: #396df2;
   font-weight: 500;
   width: 130px;
   font-size: 17px;
@@ -105,10 +106,6 @@ ul {
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
   border: 2px solid #7f8cff;
-}
-
-.see a{
-  color: #396df2;
 }
 
 /* ### About Myself ### */
@@ -162,9 +159,6 @@ ul {
 
 .see:hover {
   background-color: #396df2;
-}
-
-.see a:hover {
   color: #fff;
 }
 
