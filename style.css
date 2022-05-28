@@ -97,13 +97,16 @@ ul {
 .see {
   color: #396df2;
   font-weight: 500;
+  width: 130px;
   font-size: 17px;
-  border: 2px solid #396df2;
-  width: 120px;
   text-align: center;
   padding: 5px;
   border-radius: 10px;
   margin-top: 15px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  border-radius: 10px;
+  border-color: #396df2;
 }
 
 /* ### About Myself ### */
@@ -147,7 +150,7 @@ ul {
   margin: 0 10px;
 }
 
-.see2 {
+/*.see2 {
   color: #396df2;
   font-weight: 500;
   font-size: 17px;
@@ -157,6 +160,9 @@ ul {
   padding: 5px;
   border-radius: 10px;
   margin-top: 15px;
+}*/
+.about .see {
+  width: 150px;
 }
 
 .cv {
