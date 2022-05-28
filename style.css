@@ -1,15 +1,15 @@
-
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
+
 a {
   text-decoration: none;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 ul {
@@ -24,20 +24,20 @@ ul {
   padding-bottom: 114px;
 }
 
-ul {
+.work ul {
   grid-column-start: 2;
   grid-column-end: 3;
 }
 
-.work .project{
-  background-color: #ffffff;
+.work .project {
+  background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
   margin-top: 88px;
 }
 
-.work img{
+.work img {
   border-radius: 8px;
   margin: auto;
   display: flex;
@@ -50,28 +50,28 @@ ul {
 }
 
 .work h3 a {
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .project-detail {
   display: flex;
 }
 
-.project-detail li{
+.project-detail li {
   margin: 10px;
 }
 
-.project-language  {
+.project-language {
   margin: 10px 0;
   display: flex;
 }
 
-.project-language li{
-  background-color: #EBEBFF;
+.project-language li {
+  background-color: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
-  color: #6070FF;
- margin: 2px;
+  color: #6070ff;
+  margin: 2px;
 }
 
 .canopy {
@@ -95,10 +95,10 @@ ul {
 }
 
 .see {
-  color: #396DF2;
+  color: #396df2;
   font-weight: 500;
   font-size: 17px;
-  border: 2px solid #396DF2;
+  border: 2px solid #396df2;
   width: 120px;
   text-align: center;
   padding: 5px;
@@ -106,14 +106,13 @@ ul {
   margin-top: 15px;
 }
 
-/*### About Myself ###*/
+/* ### About Myself ### */
 
 .about {
-  background-color: #ffffff;
-  margin-top: -30px;
+  background-color: #fff;
   display: grid;
   grid-template-columns: 10% 80% 10%;
-  padding :114px 0;
+  padding: 114px 0;
   border-radius: 0 80px 0 0;
 }
 
@@ -143,16 +142,16 @@ ul {
   display: flex;
 }
 
-.about ul li{
-/*change it to space between*/
+.about ul li {
+/* change it to space between */
   margin: 0 10px;
 }
 
 .see2 {
-  color: #396DF2;
+  color: #396df2;
   font-weight: 500;
   font-size: 17px;
-  border: 2px solid #396DF2;
+  border: 2px solid #396df2;
   width: 150px;
   text-align: center;
   padding: 5px;
@@ -164,20 +163,3 @@ ul {
   flex-direction: column;
   margin: 40px 0;
 }
-
-.about-language li{
-    flex-direction: column;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
