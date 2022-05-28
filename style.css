@@ -1,6 +1,4 @@
-.about {
-  display: none;
-}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +9,7 @@ a {
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #E5E5E5;
 }
 
 ul {
@@ -22,6 +21,7 @@ ul {
   min-width: 415px;
   display: grid;
   grid-template-columns: 10% 80% 10%;
+  padding-bottom: 114px;
 }
 
 ul {
@@ -105,4 +105,79 @@ ul {
   border-radius: 10px;
   margin-top: 15px;
 }
+
+/*### About Myself ###*/
+
+.about {
+  background-color: #ffffff;
+  margin-top: -30px;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  padding :114px 0;
+  border-radius: 0 80px 0 0;
+}
+
+.about * {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.about h2 {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.about p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.about h4 {
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.about ul {
+  display: flex;
+}
+
+.about ul li{
+/*change it to space between*/
+  margin: 0 10px;
+}
+
+.see2 {
+  color: #396DF2;
+  font-weight: 500;
+  font-size: 17px;
+  border: 2px solid #396DF2;
+  width: 150px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.cv {
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+.about-language li{
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
