@@ -105,8 +105,7 @@ ul {
   margin-top: 15px;
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
-  border-radius: 10px;
-  border-color: #396df2;
+  border: 2px solid #7f8cff;
 }
 
 /* ### About Myself ### */
@@ -117,6 +116,7 @@ ul {
   grid-template-columns: 10% 80% 10%;
   padding: 114px 0;
   border-radius: 0 80px 0 0;
+  grid-column-end: 4;
 }
 
 .about * {
@@ -133,28 +133,77 @@ ul {
 .about p {
   font-weight: 400;
   font-size: 16px;
+  margin-top: 12px;
 }
 
 .about h4 {
   color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
+  margin-top: 12px;
 }
 
-.about ul {
+.connect {
   display: flex;
+  margin: 15px 0;
 }
 
-.about ul li {
-  /* change it to space between */
-  margin: 0 10px;
+.connect li {
+  padding: 0 5px;
 }
 
 .about .see {
   width: 150px;
+  margin: 30px 0;
+}
+
+.see:hover {
+  color: #fff;
+  background-color: #396df2;
+}
+
+.about-language img {
+  height: 48px;
+  margin: 9px 9px;
+}
+
+.about-language li {
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  margin: 12px 0;
+  height: 66px;
+  display: flex;
+}
+
+.about-language li a {
+  padding: 20px 15px;
+  color: #253858;
+}
+
+.lang {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang img {
+  height: 16px;
+  margin-top: 10px;
+}
+
+.lang .down_arrow {
+  height: 10px;
+}
+
+hr {
+  margin: 20px 0;
+  border: 1px solid #DFE1E6;
 }
 
 .cv {
-  flex-direction: column;
   margin: 40px 0;
+}
+
+.cv section {
+  font-weight: 500;
+  font-size: 20px;
 }
