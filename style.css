@@ -207,3 +207,78 @@ hr {
   font-weight: 500;
   font-size: 20px;
 }
+
+/* ### Contact ### */
+
+.contact{
+  background-color: #6070ff;
+  background-image: url(img/bg_contact.png);
+  border-radius: 80px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  margin-top: -80px;
+}
+
+.contact h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.contact p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ebebff;
+  line-height: 28px;
+}
+
+form input, textarea{
+  border-radius: 8px;
+  border-style: none;
+  border: 1px solid #cfd8dc;
+  padding-left: 16px;
+}
+
+#name {
+  width: 100%;
+  height: 48px;
+  margin-top: 20px;
+}
+
+#mail {
+  width: 100%;
+  height: 48px;
+  margin-top: 20px;
+}
+
+#comment {
+  width: 100%;
+  height: 170px;
+  margin-top: 20px;
+}
+
+#submit {
+  background-color: #fff;
+  padding: 15px;
+  color: #6070ff;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  margin-top: 22px;
+}
+
+input::placeholder {
+  color: #172b4d;
+  font-size: 17px;
+}
+
+textarea {
+  color: #b3bac5;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 15px;
+}
