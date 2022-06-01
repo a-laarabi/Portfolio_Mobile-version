@@ -210,7 +210,7 @@ hr {
 
 /* ### Contact ### */
 
-.contact{
+.contact {
   background-color: #6070ff;
   background-image: url(img/bg_contact.png);
   border-radius: 80px 0 0 0;
@@ -235,7 +235,8 @@ hr {
   line-height: 28px;
 }
 
-form input, textarea{
+form input,
+textarea {
   border-radius: 8px;
   border-style: none;
   border: 1px solid #cfd8dc;
