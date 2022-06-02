@@ -18,7 +18,6 @@ ul {
 
 .work {
   background-color: #e5e5e5;
-  min-width: 415px;
   display: grid;
   grid-template-columns: 10% 80% 10%;
   padding-bottom: 114px;
@@ -42,6 +41,7 @@ ul {
   margin: auto;
   display: flex;
   align-items: center;
+  width: auto;
 }
 
 .work h3 {
