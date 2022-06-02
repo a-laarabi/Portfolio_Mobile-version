@@ -269,6 +269,7 @@ textarea {
   line-height: 24px;
   letter-spacing: 3%;
   margin-top: 22px;
+  border: 1px solid #396df2;
 }
 
 input::placeholder {
@@ -282,4 +283,9 @@ textarea {
   font-weight: 400;
   line-height: 24px;
   padding-top: 15px;
+}
+
+#submit:hover {
+  background-color: #396df2;
+  color: #fff;
 }
