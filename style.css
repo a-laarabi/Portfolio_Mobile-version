@@ -403,12 +403,34 @@ textarea {
   }
 
   /* ### Work ### */
+  .left {
+    float: left;
+    width: 50%;
+  }
 
+  .right {
+    float: right;
+    width: 50%;
+  }
 
+  .project {
+    overflow: hidden;
+  }
 
+  /* ### Work ### */
+  .text-inside_about {
+    width: 30%;
+    float: left;
+    display: inline;
+  }
 
+  .cv {
+    width:60%;
+    display: inline;
+    float: right;
+  }
 
-/* ### contact ### */
+  /* ### contact ### */
 
   .contact {
     background-image: url(img/bg_contact.png);
@@ -418,5 +440,10 @@ textarea {
   #name {
     width: 70%;
     /* margin: auto; */
+  }
+
+  form input,
+  textarea {
+    border-radius: 0px;
   }
 }
