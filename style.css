@@ -61,7 +61,24 @@ h1 {
   font-size: 48px;
   font-weight: 700;
   margin-top: 50px;
-  color: #172b4d;
+  animation: name 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes name {
+  from {
+    color: #fff;
+  }
+
+  50% {
+    color: #396df2;
+  }
+  
+  to {
+    color: #172b4d;
+  }
+
+
 }
 
 .connect {
