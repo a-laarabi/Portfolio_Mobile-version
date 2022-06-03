@@ -42,7 +42,7 @@ header {
   border-radius: 5px;
 }
 
-.desc-nav{
+.desc-nav {
   display: none;
 }
 
@@ -64,12 +64,8 @@ h1 {
   color: #091e42;
 }
 
-.header_body p {
-  font-size: 20px;
-}
-
 .connect {
-  margin-top: 10px;
+  margin: 15px 0;
   display: flex;
 }
 
@@ -86,7 +82,7 @@ nav ul a:hover {
 }
 
 .connect li {
-  padding: 5px;
+  padding: 0 10px;
 }
 
 .header_body {
@@ -153,7 +149,7 @@ h4 {
 }
 
 .project-detail li {
-  margin: 10px;
+  margin: 20px;
 }
 
 .project-language {
@@ -238,15 +234,6 @@ h4 {
   margin-top: 12px;
 }
 
-.connect {
-  display: flex;
-  margin: 15px 0;
-}
-
-.connect li {
-  padding: 0 5px;
-}
-
 .about .see {
   width: 150px;
   margin: 30px 0;
@@ -271,7 +258,7 @@ h4 {
   display: flex;
 }
 
-.about-language li a {
+.about-link {
   padding: 20px 15px;
   color: #253858;
 }
@@ -390,7 +377,7 @@ textarea {
   color: #fff;
 }
 
-@media (min-width: 600px){
+@media (min-width: 600px) {
   .main-text {
     background: url(img/bg_Header.png);
     background-size: 100%;
@@ -503,14 +490,14 @@ textarea {
     width: 50%;
     margin: auto;
   }
+
   .contact ul {
     justify-content: center;
     text-align: center;
-  }
-  .contact ul {
     width: 50%;
     margin: auto;
   }
+
   .name {
     width: 90%;
   }
@@ -518,17 +505,17 @@ textarea {
   .mail {
     width: 90%;
   }
-  
+
   .comment {
     width: 90%;
   }
-  
+
   .submit {
     border-radius: 8px;
   }
 
   form input,
   textarea {
-    border-radius: 0px;
+    border-radius: 0;
   }
 }
