@@ -73,6 +73,11 @@ h1 {
   display: inline-block;
 }
 
+.project h3 a {
+  color: #172b4d;
+  text-decoration: none;
+}
+
 nav ul a:hover {
   color: #4053fc;
 }
@@ -138,10 +143,7 @@ h4 {
 .work h3 {
   font-weight: 700;
   font-size: 32px;
-}
-
-.work h3 a {
-  color: #172b4d;
+  margin-left: 16px;
 }
 
 .project-detail {
@@ -149,12 +151,13 @@ h4 {
 }
 
 .project-detail li {
-  margin: 20px;
+  margin: 20px 16px;
 }
 
 .project-language {
   margin: 10px 0;
   display: flex;
+  margin-left: 16px;
 }
 
 .project-language li {
@@ -183,6 +186,7 @@ h4 {
   font-size: 15px;
   color: #344563;
   width: 80%;
+  margin-left: 16px;
 }
 
 .see {
@@ -197,6 +201,7 @@ h4 {
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
   border: 2px solid #396df2;
+  margin-left: 16px;
 }
 
 /* ### About Myself ### */
