@@ -382,7 +382,7 @@ textarea {
   color: #fff;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .main-text {
     background: url(img/bg_Header.png);
     background-size: 100%;
