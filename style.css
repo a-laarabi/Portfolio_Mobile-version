@@ -335,7 +335,14 @@ textarea {
 }
 
 .name {
+  justify-content: center;
+  text-align: center;
   width: 100%;
+  margin: auto;
+}
+
+.name {
+  width: 90%;
   height: 48px;
   margin-top: 20px;
 }
