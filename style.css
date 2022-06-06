@@ -42,7 +42,7 @@ header {
   border-radius: 5px;
 }
 
-.desc-nav{
+.desc-nav {
   display: none;
 }
 
@@ -73,14 +73,14 @@ h1 {
   50% {
     color: #396df2;
   }
-  
+
   to {
     color: #172b4d;
   }
 }
 
 .connect {
-  margin-top: 10px;
+  margin: 15px 0;
   display: flex;
 }
 
@@ -88,8 +88,13 @@ h1 {
   display: inline-block;
 }
 
+.project h3 a {
+  color: #172b4d;
+  text-decoration: none;
+}
+
 nav ul a:hover {
-  color: #6070ff;
+  color: #4053fc;
 }
 
 .connect a:hover {
@@ -97,7 +102,7 @@ nav ul a:hover {
 }
 
 .connect li {
-  padding: 5px;
+  padding: 0 10px;
 }
 
 .header_body {
@@ -109,8 +114,9 @@ nav ul a:hover {
 
 .header_body p {
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 50px;
+  color: #091e42;
 }
 
 h4 {
@@ -123,7 +129,6 @@ h4 {
 /* ### Work section ### */
 .work {
   background-color: #e5e5e5;
-  min-width: 415px;
   display: grid;
   grid-template-columns: 10% 80% 10%;
   padding-bottom: 114px;
@@ -143,6 +148,7 @@ h4 {
 }
 
 .work img {
+  width: 99%;
   border-radius: 8px;
   margin: auto;
   display: flex;
@@ -152,10 +158,7 @@ h4 {
 .work h3 {
   font-weight: 700;
   font-size: 32px;
-}
-
-.work h3 a {
-  color: #172b4d;
+  margin-left: 16px;
 }
 
 .project-detail {
@@ -163,12 +166,13 @@ h4 {
 }
 
 .project-detail li {
-  margin: 10px;
+  margin: 20px 16px;
 }
 
 .project-language {
   margin: 10px 0;
   display: flex;
+  margin-left: 16px;
 }
 
 .project-language li {
@@ -194,9 +198,10 @@ h4 {
 
 .work p {
   font-weight: 400;
-  font-size: 15;
+  font-size: 15px;
   color: #344563;
   width: 80%;
+  margin-left: 16px;
 }
 
 .see {
@@ -210,7 +215,8 @@ h4 {
   margin-top: 15px;
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
-  border: 2px solid #7f8cff;
+  border: 2px solid #396df2;
+  margin-left: 16px;
 }
 
 /* ### About Myself ### */
@@ -248,23 +254,15 @@ h4 {
   margin-top: 12px;
 }
 
-.connect {
-  display: flex;
-  margin: 15px 0;
-}
-
-.connect li {
-  padding: 0 5px;
-}
-
 .about .see {
   width: 150px;
   margin: 30px 0;
 }
 
 .see:hover {
-  background-color: #396df2;
+  background-color: #4053fc;
   color: #fff;
+  border-color: #4053fc;
 }
 
 .about-language img {
@@ -280,7 +278,7 @@ h4 {
   display: flex;
 }
 
-.about-language li a {
+.about-link {
   padding: 20px 15px;
   color: #253858;
 }
@@ -316,6 +314,7 @@ hr {
 /* ### Contact ### */
 
 .contact {
+  clear: both;
   background-color: #6070ff;
   background-image: url(img/bg_contact-Mobile.png);
   border-radius: 80px 0 0 0;
@@ -330,6 +329,7 @@ hr {
   color: #fff;
   font-weight: 800;
   font-size: 40px;
+  margin-top: 103px;
 }
 
 .contact p {
@@ -338,6 +338,7 @@ hr {
   font-size: 20px;
   color: #ebebff;
   line-height: 28px;
+  margin: 22px;
 }
 
 form input,
@@ -348,25 +349,25 @@ textarea {
   padding-left: 16px;
 }
 
-#name {
+.name {
   width: 100%;
   height: 48px;
   margin-top: 20px;
 }
 
-#mail {
+.mail {
   width: 100%;
   height: 48px;
   margin-top: 20px;
 }
 
-#comment {
+.comment {
   width: 100%;
   height: 170px;
   margin-top: 20px;
 }
 
-#submit {
+.submit {
   background-color: #fff;
   padding: 15px;
   color: #6070ff;
@@ -374,7 +375,7 @@ textarea {
   line-height: 24px;
   letter-spacing: 3%;
   margin-top: 22px;
-  border: 1px solid #396df2;
+  border: 1px solid #6070ff;
 }
 
 input::placeholder {
@@ -391,11 +392,12 @@ textarea {
 }
 
 #submit:hover {
-  background-color: #396df2;
+  background-color: #4053fc;
+  border-color: #4053fc;
   color: #fff;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .main-text {
     background: url(img/bg_Header.png);
     background-size: 100%;
@@ -417,32 +419,83 @@ textarea {
     line-height: 20px;
   }
 
+  h1 {
+    font-size: 48px;
+  }
+
   /* ### Work ### */
   .left {
     float: left;
-    width: 50%;
   }
 
   .right {
     float: right;
-    width: 50%;
   }
 
   .project {
     overflow: hidden;
   }
 
-  /* ### Work ### */
+  .work img {
+    width: 49%;
+  }
+
+  .text-inside_project {
+    width: 49%;
+    margin: 1%;
+  }
+
+  .work h3 {
+    font-size: 40px;
+  }
+
+  .canopy {
+    font-size: 18px;
+  }
+
+  .project_info {
+    font-size: 18px;
+  }
+
+  .work p {
+    font-size: 16px;
+  }
+
+  /* ### about ### */
+  .about {
+    grid-template-columns: 10% 30% 50% 10%;
+  }
+
+  .about h2 {
+    color: #091e42;
+  }
+
   .text-inside_about {
-    width: 30%;
-    float: left;
-    display: inline;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 
   .cv {
-    width:60%;
-    display: inline;
-    float: right;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-left: 37px;
+  }
+
+  .about-language {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-language li {
+    height: 120px;
+    width: 122px;
+    margin-left: 12px;
+  }
+
+  .about-language li a {
+    padding-top: 76px;
+    margin-left: -63px;
+    padding-left: 9px;
   }
 
   /* ### contact ### */
@@ -452,13 +505,37 @@ textarea {
     background-size: 100%;
   }
 
-  #name {
-    width: 70%;
-    /* margin: auto; */
+  .contact p {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+
+  .contact ul {
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+
+  .name {
+    width: 90%;
+  }
+
+  .mail {
+    width: 90%;
+  }
+
+  .comment {
+    width: 90%;
+  }
+
+  .submit {
+    border-radius: 8px;
   }
 
   form input,
   textarea {
-    border-radius: 0px;
+    border-radius: 0;
   }
 }
