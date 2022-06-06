@@ -16,9 +16,104 @@ ul {
   list-style-type: none;
 }
 
+header {
+  background-color: #fff;
+}
+
+.inside-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  width: 80%;
+  margin: auto;
+}
+
+.logo {
+  font-size: 18px;
+  color: #6070ff;
+}
+
+.burger {
+  width: 40px;
+  height: 5px;
+  margin-top: 4px;
+  background-color: #6070ff;
+  border-radius: 5px;
+}
+
+.desc-nav {
+  display: none;
+}
+
+.main-text {
+  background: url('img/bg_Header-Mobile.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #fff;
+  border-radius: 0 0 0 100px;
+  padding-bottom: 114px;
+  padding-top: 60px;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 50px;
+  color: #091e42;
+}
+
+.connect {
+  margin: 15px 0;
+  display: flex;
+}
+
+.connect a {
+  display: inline-block;
+}
+
+.project h3 a {
+  color: #172b4d;
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  color: #4053fc;
+}
+
+.connect a:hover {
+  transform: rotate(-20deg);
+}
+
+.connect li {
+  padding: 0 10px;
+}
+
+.header_body {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: auto;
+}
+
+.header_body p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin-top: 50px;
+  color: #091e42;
+}
+
+h4 {
+  color: #7f8cff;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+}
+
+/* ### Work section ### */
 .work {
   background-color: #e5e5e5;
-  min-width: 415px;
   display: grid;
   grid-template-columns: 10% 80% 10%;
   padding-bottom: 114px;
@@ -38,6 +133,7 @@ ul {
 }
 
 .work img {
+  width: 99%;
   border-radius: 8px;
   margin: auto;
   display: flex;
@@ -47,10 +143,7 @@ ul {
 .work h3 {
   font-weight: 700;
   font-size: 32px;
-}
-
-.work h3 a {
-  color: #172b4d;
+  margin-left: 16px;
 }
 
 .project-detail {
@@ -58,12 +151,13 @@ ul {
 }
 
 .project-detail li {
-  margin: 10px;
+  margin: 20px 16px;
 }
 
 .project-language {
   margin: 10px 0;
   display: flex;
+  margin-left: 16px;
 }
 
 .project-language li {
@@ -89,9 +183,10 @@ ul {
 
 .work p {
   font-weight: 400;
-  font-size: 15;
+  font-size: 15px;
   color: #344563;
   width: 80%;
+  margin-left: 16px;
 }
 
 .see {
@@ -105,7 +200,8 @@ ul {
   margin-top: 15px;
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
-  border: 2px solid #7f8cff;
+  border: 2px solid #396df2;
+  margin-left: 16px;
 }
 
 /* ### About Myself ### */
@@ -143,23 +239,15 @@ ul {
   margin-top: 12px;
 }
 
-.connect {
-  display: flex;
-  margin: 15px 0;
-}
-
-.connect li {
-  padding: 0 5px;
-}
-
 .about .see {
   width: 150px;
   margin: 30px 0;
 }
 
 .see:hover {
-  background-color: #396df2;
+  background-color: #4053fc;
   color: #fff;
+  border-color: #4053fc;
 }
 
 .about-language img {
@@ -175,7 +263,7 @@ ul {
   display: flex;
 }
 
-.about-language li a {
+.about-link {
   padding: 20px 15px;
   color: #253858;
 }
@@ -206,4 +294,97 @@ hr {
 .cv section {
   font-weight: 500;
   font-size: 20px;
+}
+
+/* ### Contact ### */
+
+.contact {
+  clear: both;
+  background-color: #6070ff;
+  background-image: url(img/bg_contact.png);
+  border-radius: 80px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  margin-top: -80px;
+}
+
+.contact h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 40px;
+  margin-top: 103px;
+}
+
+.contact p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ebebff;
+  line-height: 28px;
+  margin: 22px;
+}
+
+form input,
+textarea {
+  border-radius: 8px;
+  border-style: none;
+  border: 1px solid #cfd8dc;
+  padding-left: 16px;
+}
+
+.contact ul {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.name {
+  width: 90%;
+  height: 48px;
+  margin-top: 20px;
+}
+
+.mail {
+  width: 90%;
+  height: 48px;
+  margin-top: 20px;
+}
+
+.comment {
+  width: 90%;
+  height: 170px;
+  margin-top: 20px;
+}
+
+.submit {
+  background-color: #fff;
+  padding: 15px;
+  color: #6070ff;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  margin-top: 22px;
+  border: 1px solid #6070ff;
+}
+
+input::placeholder {
+  color: #172b4d;
+  font-size: 17px;
+}
+
+textarea {
+  color: #b3bac5;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 15px;
+}
+
+#submit:hover {
+  background-color: #4053fc;
+  border-color: #4053fc;
+  color: #fff;
 }
