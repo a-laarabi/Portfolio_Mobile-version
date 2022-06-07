@@ -31,14 +31,14 @@ header {
 
 .logo {
   font-size: 18px;
-  color: #6070ff;
+  color: #3343d1;
 }
 
 .burger {
   width: 40px;
   height: 5px;
   margin-top: 4px;
-  background-color: #6070ff;
+  background-color: #3343d1;
   border-radius: 5px;
 }
 
@@ -120,7 +120,7 @@ nav ul a:hover {
 }
 
 h4 {
-  color: #7f8cff;
+  color: #454fb0;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   margin-top: 30px;
@@ -179,7 +179,7 @@ h4 {
   background-color: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
-  color: #6070ff;
+  color: #3343d1;
   margin: 2px;
 }
 
@@ -193,7 +193,7 @@ h4 {
   list-style-type: circle;
   font-weight: 600;
   font-size: 13px;
-  color: #7a869a;
+  color: #424448;
 }
 
 .work p {
@@ -248,7 +248,7 @@ h4 {
 }
 
 .about h4 {
-  color: #7f8cff;
+  color: #454fb0;
   font-weight: 500;
   font-size: 16px;
   margin-top: 12px;
@@ -315,7 +315,7 @@ hr {
 
 .contact {
   clear: both;
-  background-color: #6070ff;
+  background-color: #3343d1;
   background-image: url(img/bg_contact-Mobile.png);
   border-radius: 80px 0 0 0;
   display: flex;
@@ -370,12 +370,12 @@ textarea {
 .submit {
   background-color: #fff;
   padding: 15px;
-  color: #6070ff;
+  color: #3343d1;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 3%;
   margin-top: 22px;
-  border: 1px solid #6070ff;
+  border: 1px solid #3343d1;
 }
 
 input::placeholder {
