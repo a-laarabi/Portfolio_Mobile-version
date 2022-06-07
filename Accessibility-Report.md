@@ -44,9 +44,16 @@ https://github.com/a-laarabi/Portfolio_Mobile-version/blob/main/style.css#L196
 > no issues found
 
 ## Interaction
+> Change the h4 tag to h2 and h2 tag in the about section to h1 to follow h1 semantically
+https://github.com/a-laarabi/Portfolio_Mobile-version/blob/main/index.html#L37
+https://github.com/a-laarabi/Portfolio_Mobile-version/blob/main/index.html#L140
+https://github.com/a-laarabi/Portfolio_Mobile-version/blob/main/index.html#L138
 
 ## Moving content
+> no issues found
 
 ## Multimedia
+> no issues found
 
 ## The basic structure of the page
+> 
