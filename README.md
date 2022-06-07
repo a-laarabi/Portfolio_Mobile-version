@@ -1,14 +1,21 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: mobile version
+# Portfolio: application deploy
 
 >In this project, I started putting the things I studied into the test
-> This project represents two necessary sections in all the portfolios projects section and about me section, I hope that you enjoy it!
+>This project represents a portfolios projects.
+>I hope that you enjoy it!
 
 
 ## Built With
 
 - HTML & CSS
+- Visual Studio Code
+- Git & GitHub
+
+## Live Demo
+
+[Live Demo Link](https://a-laarabi.github.io/Portfolio_Mobile-version/)
 
 ## Getting Started
 
