@@ -56,4 +56,4 @@ https://github.com/a-laarabi/Portfolio_Mobile-version/blob/main/index.html#L138
 > no issues found
 
 ## The basic structure of the page
-> 
+> no issues found

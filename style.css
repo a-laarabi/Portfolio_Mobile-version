@@ -124,6 +124,7 @@ h2 {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   margin-top: 30px;
+  font-weight: 500;
 }
 
 /* ### Work section ### */
@@ -466,7 +467,7 @@ textarea {
     grid-template-columns: 10% 30% 50% 10%;
   }
 
-  .about h2 {
+  .about h1 {
     color: #091e42;
   }
 
