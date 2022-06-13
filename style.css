@@ -554,10 +554,6 @@ textarea {
   width: 100%;
 }
 
-.menu-popup a {
-  color: black;
-}
-
 .menu-popup .menu-icon {
   margin-top: 10%;
   margin-left: 80%;
@@ -570,10 +566,10 @@ textarea {
   gap: 60px;
 }
 
-.menu-popup ul li a{
-  color : #fff;
+.menu-popup .nav-link {
+  color: #fff;
   font-size: 32px;
-  font-family: 'Poppins' ,sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 
