@@ -16,17 +16,25 @@
         <section class="inside-header">
             <a href="#" class="logo">My Logo</a>
             <nav>
-                <ul>
+                <ul class="menu">
                     <li class="burger"></li>
                     <li class="burger"></li>
                     <li class="burger"></li>
                 </ul>
 
                 <ul class="desc-nav">
-                    <li><a href="#">Portoflio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#work">Portoflio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="menu-popup">
+                    <img src="img/Icon.png" class="menu-icon" alt="" />
+                    <ul class="desc-nav">
+                      <li><a class="works" href="#work">Portoflio</a></li>
+                      <li><a class="aboutMe" href="#about">About</a></li>
+                      <li><a class="contactMe" href="#contact">Contact</a></li>
+                    </ul>
+                  </div>
             </nav>
         </section>
     </header>
@@ -45,7 +53,7 @@
         </section>
     </section>
 
-    <section class="work">
+    <section id="work" class="work">
         <ul>
             <li class="project">
                 <section class="inside_project">
@@ -133,7 +141,7 @@
         </ul>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <section class="text-inside_about">
             <h1>About<br>Myself</h1>
             <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -176,7 +184,7 @@
         </ul>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <h2>Contact me</h2>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         
@@ -189,5 +197,6 @@
             </ul>
         </form>
     </section>
+    <script src="menu.js"></script>
 </body>
 </html>
