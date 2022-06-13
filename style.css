@@ -545,11 +545,13 @@ textarea {
   position: absolute;
   height: 100vh;
   background-color: rgba(96, 112, 255, 0.7);
+  backdrop-filter: blur(6px);
   left: 0;
   right: 0;
   bottom: 0;
   top: 0;
   display: none;
+  width: 100%;
 }
 
 .menu-popup a {
@@ -566,6 +568,13 @@ textarea {
   margin-left: 80px;
   flex-direction: column;
   gap: 60px;
+}
+
+.menu-popup ul li a{
+  color : #fff;
+  font-size: 32px;
+  font-family: 'Poppins' ,sans-serif;
+  font-weight: 600;
 }
 
 .menu-popup.visible {
