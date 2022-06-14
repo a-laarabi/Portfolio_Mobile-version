@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -8,7 +9,6 @@ a {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   background-color: #e5e5e5;
 }
 
@@ -31,14 +31,17 @@ header {
 
 .logo {
   font-size: 18px;
-  color: #3343d1;
+  color: #6070ff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 .burger {
   width: 40px;
   height: 5px;
   margin-top: 4px;
-  background-color: #3343d1;
+  background-color: #6070ff;
   border-radius: 5px;
 }
 
@@ -57,7 +60,6 @@ header {
 }
 
 .body-header {
-  font-family: "Poppins", sans-serif;
   font-size: 48px;
   font-weight: 700;
   margin-top: 50px;
@@ -113,16 +115,14 @@ nav ul a:hover {
 }
 
 .header_body p {
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   margin-top: 50px;
   color: #091e42;
 }
 
 h2 {
-  color: #454fb0;
+  color: #7f8cff;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
   margin-top: 30px;
   font-weight: 500;
 }
@@ -180,7 +180,7 @@ h2 {
   background-color: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
-  color: #3343d1;
+  color: #6070ff;
   margin: 2px;
 }
 
@@ -214,7 +214,6 @@ h2 {
   padding: 5px;
   border-radius: 10px;
   margin-top: 15px;
-  font-family: "Poppins", sans-serif;
   background-color: #fff;
   border: 2px solid #396df2;
   margin-left: 16px;
@@ -249,7 +248,7 @@ h2 {
 }
 
 .about h2 {
-  color: #454fb0;
+  color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
   margin-top: 12px;
@@ -316,7 +315,7 @@ hr {
 
 .contact {
   clear: both;
-  background-color: #3343d1;
+  background-color: #6070ff;
   background-image: url(img/bg_contact-Mobile.png);
   border-radius: 80px 0 0 0;
   display: flex;
@@ -371,12 +370,12 @@ textarea {
 .submit {
   background-color: #fff;
   padding: 15px;
-  color: #3343d1;
+  color: #6070ff;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 3%;
   margin-top: 22px;
-  border: 1px solid #3343d1;
+  border: 1px solid #6070ff;
 }
 
 input::placeholder {
@@ -544,8 +543,12 @@ textarea {
 .menu-popup {
   position: absolute;
   height: 100vh;
-  background-color: rgba(96, 112, 255, 0.7);
-  backdrop-filter: blur(6px);
+  background-color: rgb(96, 112, 255, 1);
+  /* background-color: #6070ff; */
+  /* background-image: url('img/Snapshoot_Portfolio.png'); */
+  /* background-blend-mode: multiply; */
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(8px);
   left: 0;
   right: 0;
   bottom: 0;
@@ -569,8 +572,9 @@ textarea {
 .menu-popup .nav-link {
   color: #fff;
   font-size: 32px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 44px;
+  mix-blend-mode: normal;
 }
 
 .menu-popup.visible {

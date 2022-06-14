@@ -9,7 +9,7 @@
 
 ## Built With
 
-- HTML & CSS
+- HTML & CSS & JavaScript
 - Visual Studio Code
 - Git & GitHub
 
@@ -19,16 +19,7 @@
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Usage
-
-### Run tests
-
+To get a local copy up and running, you should first move to 'domMenu' repository, then clone it into your local machine check this [article](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) for more information.
 
 
 ## Author
@@ -43,17 +34,11 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/a-laarabi/Portfolio_Mobile-version/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
