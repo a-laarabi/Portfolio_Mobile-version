@@ -38,8 +38,8 @@ header {
 }
 
 .burger {
-  width: 40px;
-  height: 5px;
+  width: 25px;
+  height: 3px;
   margin-top: 4px;
   background-color: #6070ff;
   border-radius: 5px;
@@ -60,6 +60,7 @@ header {
 }
 
 .body-header {
+  color: #6070ff;
   font-size: 48px;
   font-weight: 700;
   margin-top: 50px;
@@ -67,7 +68,7 @@ header {
   animation-iteration-count: infinite;
 }
 
-@keyframes name {
+/* @keyframes name {
   from {
     color: #fff;
   }
@@ -79,7 +80,7 @@ header {
   to {
     color: #172b4d;
   }
-}
+} */
 
 .connect {
   margin: 15px 0;
@@ -543,10 +544,7 @@ textarea {
 .menu-popup {
   position: absolute;
   height: 100vh;
-  background-color: rgb(96, 112, 255, 1);
-  /* background-color: #6070ff; */
-  /* background-image: url('img/Snapshoot_Portfolio.png'); */
-  /* background-blend-mode: multiply; */
+  background-color: #6070ff;
   mix-blend-mode: multiply;
   backdrop-filter: blur(8px);
   left: 0;
@@ -557,14 +555,21 @@ textarea {
   width: 100%;
 }
 
+/* .menu-popup::after {
+  content: ' ';
+  position: absolute;
+  mix-blend-mode: multiply;
+} */
+
 .menu-popup .menu-icon {
-  margin-top: 10%;
+  margin-top: 62px;
   margin-left: 80%;
 }
 
 .menu-popup ul {
+  margin-top: 16px;
   display: flex;
-  margin-left: 80px;
+  margin-left: 28px;
   flex-direction: column;
   gap: 60px;
 }
@@ -573,7 +578,7 @@ textarea {
   color: #fff;
   font-size: 32px;
   font-weight: 500;
-  line-height: 44px;
+  line-height: 30px;
   mix-blend-mode: normal;
 }
 
