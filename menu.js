@@ -11,7 +11,7 @@ menuIcon.addEventListener('click', () => {
   menuPopup.classList.remove('visible');
 });
 
-for (let i = 0; i < link.length; i+=1) {
+for (let i = 0; i < link.length; i += 1) {
   link[i].addEventListener('click', () => {
     menuPopup.classList.remove('visible');
   });
