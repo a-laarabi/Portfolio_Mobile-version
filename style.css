@@ -64,23 +64,7 @@ header {
   font-size: 48px;
   font-weight: 700;
   margin-top: 50px;
-  animation: name 4s;
-  animation-iteration-count: infinite;
 }
-
-/* @keyframes name {
-  from {
-    color: #fff;
-  }
-
-  50% {
-    color: #396df2;
-  }
-
-  to {
-    color: #172b4d;
-  }
-} */
 
 .connect {
   margin: 15px 0;
@@ -554,12 +538,6 @@ textarea {
   display: none;
   width: 100%;
 }
-
-/* .menu-popup::after {
-  content: ' ';
-  position: absolute;
-  mix-blend-mode: multiply;
-} */
 
 .menu-popup .menu-icon {
   margin-top: 62px;
