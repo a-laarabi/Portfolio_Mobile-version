@@ -4,12 +4,17 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
 
 body {
   background-color: #e5e5e5;
+  font-family: "Poppins", sans-serif;
 }
 
 ul {
