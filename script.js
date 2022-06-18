@@ -37,14 +37,14 @@ const ul = document.createElement('ul');
 for (let i = 0; i < workObject.length; i += 1) {
   const li = document.createElement('li');
   li.classList.add('project');
-  let section = document.createElement('section');
+  const section = document.createElement('section');
   section.classList.add('inside_project');
 
   const image = document.createElement('img');
   image.src = workObject[i].img;
-  if (i % 2 === 0) { image.classList.add('left') } else { image.classList.add('right') };
-  let sectionInside = document.createElement('section');
-  if (i % 2 === 0){ sectionInside.classList.add('right', 'text-inside_project') } else { sectionInside.classList.add('left', 'text-inside_project') };
+  if (i % 2 === 0) { image.classList.add('left'); } else { image.classList.add('right'); }
+  const sectionInside = document.createElement('section');
+  if (i % 2 === 0){ sectionInside.classList.add('right', 'text-inside_project'); } else { sectionInside.classList.add('left', 'text-inside_project'); }
   sectionInside.innerHTML = `
       <h3><a href="#">${workObject[i].title}</a></h3>
       <ul class="project-detail">
@@ -63,15 +63,12 @@ for (let i = 0; i < workObject.length; i += 1) {
 
   section.appendChild(image);
   section.appendChild(sectionInside);
-
-  
-  
   li.appendChild(section);
   ul.appendChild(li);
 }
 document.getElementById('work').appendChild(ul);
 
-let buttonWork = document.querySelectorAll('.work .see');
+const buttonWork = document.querySelectorAll('.work .see');
 const popup = document.querySelector('.projectPopup');
 
 for (let i = 0; i < buttonWork.length; i += 1) {
@@ -80,7 +77,7 @@ for (let i = 0; i < buttonWork.length; i += 1) {
   });
 }
 
-let xButton = document.querySelector('.close');
+const xButton = document.querySelector('.close');
 
 xButton.addEventListener('click', () => {
   popup.classList.remove('visible');
