@@ -435,10 +435,12 @@ textarea {
 
   .canopy {
     font-size: 18px;
+    font-weight: 500;
   }
 
   .project_info {
     font-size: 18px;
+    font-weight: 400;
   }
 
   .work p {
@@ -522,6 +524,10 @@ textarea {
   textarea {
     border-radius: 0;
   }
+
+  /* ########## Project popup ########## */
+
+  
 }
 
 .menu-popup {
@@ -562,3 +568,48 @@ textarea {
 .menu-popup.visible {
   display: block;
 }
+
+/* ########## Project popup ########## */
+
+.projectPopup {
+  background-color: rgba(193, 199, 208, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  /* display: flex; */
+  overflow-y: scroll;
+  
+}
+
+.projectPopup.visible{
+  display: flex;
+}
+
+.Inside-projectPopup {
+  width: 80%;
+  min-height: 90vh;
+  border-radius: 18px;
+  border: 1px solid #ebecf0;
+  padding: 16px;
+  background-color: #fff;
+}
+
+.projectPopup .pic {
+  width: 100%;
+}
+
+.projectPopup .popup-info {
+  display: flex;
+  gap: 3%;
+}
+
+/* .projectPopup * {
+  border: 1px solid black;
+} */
+ 

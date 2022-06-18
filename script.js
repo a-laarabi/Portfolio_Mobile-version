@@ -1,5 +1,3 @@
-// work Section
-
 const workObject = [
   {
     title: 'Tonic',
@@ -75,3 +73,12 @@ for(let i = 0; i < workObject.length; i += 1){
   ul.appendChild(li)
 }
 document.getElementById('work').appendChild(ul);
+
+let buttonWork = document.querySelectorAll('.work .see');
+let popup = document.querySelector('.projectPopup')
+
+for (let i = 0; i < buttonWork.length; i += 1) {
+  buttonWork[i].addEventListener('click', () => {
+    popup.classList.add('visible');
+  });
+}
