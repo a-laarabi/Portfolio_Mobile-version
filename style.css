@@ -564,13 +564,13 @@ textarea {
 }
 
 .erreur {
-  color: #da3939;
+  color: #e55934;
   font-size: 12px;
   font-weight: 500;
 }
 
 .erreur.visible {
-  background-color: #fff;
+  background-color: #e9ff70;
   padding: 10px;
   border-radius: 50%;
 }

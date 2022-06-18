@@ -19,7 +19,7 @@ for (let i = 0; i < link.length; i += 1) {
 
 // ######## Error ########
 
-let submit = document.querySelector('.submit');
+const submit = document.querySelector('.submit');
 
 submit.addEventListener('click', (error) => {
   const mail = document.getElementById('mail').value;
