@@ -6,7 +6,7 @@ const workObject = [
     img: 'img/Snapshoot_Portfolio.png',
     projectDetail:['CANOPY', 'Back End Dev', '2015'],
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    languages:['html', 'css', 'javaScript'],
+    languages:['html', 'Ruby on rails', 'css', 'javaScript'],
     popupinfo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   },
   {
@@ -28,7 +28,7 @@ const workObject = [
   {
     title: 'Uber Navigation',
     img: 'img/Snapshoot_Portfolio-3.png',
-    projectDetail:['CANOPY', 'Lead Developer', '2015'],
+    projectDetail:['Uber', 'Lead Developer', '2018'],
     info: "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
     languages:['html', 'Ruby on rails', 'css', 'javaScript'],
     popupinfo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
@@ -41,8 +41,37 @@ for(let i = 0; i < workObject.length; i += 1){
   li.classList.add('project');
   section = document.createElement('section');
   section.classList.add('inside_project');
+  //section.innerHTML = `<img src="img/Snapshoot_Portfolio-1.png" alt="inside_project project">`
   
+  let image = document.createElement('img');
+  image.src = workObject[i].img;
+  if(i % 2 == 0){image.classList.add('left')} else{image.classList.add('right')}
+  
+  sectionInside = document.createElement('section');
+  if(i % 2 == 0){sectionInside.classList.add('right', 'text-inside_project')} else{sectionInside.classList.add('left', 'text-inside_project')}
+  
+  sectionInside.innerHTML = `
+      <h3><a href="#">${workObject[i].title}</a></h3>
+      <ul class="project-detail">
+          <li class="canopy">${workObject[i].projectDetail[0]}</li>
+          <li class="project_info">${workObject[i].projectDetail[1]}</li>
+          <li class="project_info">${workObject[i].projectDetail[2]}</li>
+      </ul>
+      <p>${workObject[i].info}</p>
+      <ul class="project-language">
+          <li><a href="#">${workObject[i].languages[0]}</a></li>
+          <li><a href="#">${workObject[i].languages[2]}</a></li>
+          <li><a href="#">${workObject[i].languages[3]}</a></li>
+      </ul>
+      <button type="button" class="see">See Project</button>
+  `
 
+  section.appendChild(image);
+  section.appendChild(sectionInside);
+
+  
+  
+  li.appendChild(section)
   ul.appendChild(li)
 }
 document.getElementById('work').appendChild(ul);
