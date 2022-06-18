@@ -562,3 +562,15 @@ textarea {
 .menu-popup.visible {
   display: block;
 }
+
+.erreur {
+  color: #e55934;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.erreur.visible {
+  background-color: #e9ff70;
+  padding: 10px;
+  border-radius: 50%;
+}
