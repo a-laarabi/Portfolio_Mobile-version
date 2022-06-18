@@ -2,52 +2,49 @@ const workObject = [
   {
     title: 'Tonic',
     img: 'img/Snapshoot_Portfolio.png',
-    projectDetail:['CANOPY', 'Back End Dev', '2015'],
-    info: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    languages:['html', 'Ruby on rails', 'css', 'javaScript'],
+    projectDetail: ['CANOPY', 'Back End Dev', '2015'],
+    info: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    languages: ['html', 'Ruby on rails', 'css', 'javaScript'],
     popupinfo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   },
   {
     title: 'Multi-Post Stories',
-    img:'img/Snapshoot_Portfolio-1.png',
-    projectDetail:['FACEBOOK', 'Full Stack Dev', '2015'],
-    info: "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
-    languages:['html', 'Ruby on rails', 'css', 'javaScript'],
+    img: 'img/Snapshoot_Portfolio-1.png',
+    projectDetail: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    info: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    languages: ['html', 'Ruby on rails', 'css', 'javaScript'],
     popupinfo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   },
   {
     title: 'Facebook 360',
     img: 'img/Snapshoot_Portfolio-2.png',
-    projectDetail:['FACEBOOK', 'Full Stack Dev', '2015'],
-    info: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    languages:['html', 'Ruby on rails', 'css', 'javaScript'],
+    projectDetail: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    info: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    languages: ['html', 'Ruby on rails', 'css', 'javaScript'],
     popupinfo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   },
   {
     title: 'Uber Navigation',
     img: 'img/Snapshoot_Portfolio-3.png',
-    projectDetail:['Uber', 'Lead Developer', '2018'],
-    info: "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
-    languages:['html', 'Ruby on rails', 'css', 'javaScript'],
+    projectDetail: ['Uber', 'Lead Developer', '2018'],
+    info: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    languages: ['html', 'Ruby on rails', 'css', 'javaScript'],
     popupinfo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   },
-]
+];
 
-let ul = document.createElement('ul');
-for(let i = 0; i < workObject.length; i += 1){
-  let li = document.createElement('li');
+const ul = document.createElement('ul');
+for (let i = 0; i < workObject.length; i += 1) {
+  const li = document.createElement('li');
   li.classList.add('project');
-  section = document.createElement('section');
+  let section = document.createElement('section');
   section.classList.add('inside_project');
-  //section.innerHTML = `<img src="img/Snapshoot_Portfolio-1.png" alt="inside_project project">`
-  
-  let image = document.createElement('img');
+
+  const image = document.createElement('img');
   image.src = workObject[i].img;
-  if(i % 2 == 0){image.classList.add('left')} else{image.classList.add('right')}
-  
-  sectionInside = document.createElement('section');
-  if(i % 2 == 0){sectionInside.classList.add('right', 'text-inside_project')} else{sectionInside.classList.add('left', 'text-inside_project')}
-  
+  if (i % 2 === 0) { image.classList.add('left') } else { image.classList.add('right') };
+  let sectionInside = document.createElement('section');
+  if (i % 2 === 0){ sectionInside.classList.add('right', 'text-inside_project') } else { sectionInside.classList.add('left', 'text-inside_project') };
   sectionInside.innerHTML = `
       <h3><a href="#">${workObject[i].title}</a></h3>
       <ul class="project-detail">
@@ -62,20 +59,20 @@ for(let i = 0; i < workObject.length; i += 1){
           <li><a href="#">${workObject[i].languages[3]}</a></li>
       </ul>
       <button type="button" class="see">See Project</button>
-  `
+  `;
 
   section.appendChild(image);
   section.appendChild(sectionInside);
 
   
   
-  li.appendChild(section)
-  ul.appendChild(li)
+  li.appendChild(section);
+  ul.appendChild(li);
 }
 document.getElementById('work').appendChild(ul);
 
 let buttonWork = document.querySelectorAll('.work .see');
-let popup = document.querySelector('.projectPopup')
+const popup = document.querySelector('.projectPopup');
 
 for (let i = 0; i < buttonWork.length; i += 1) {
   buttonWork[i].addEventListener('click', () => {
@@ -83,7 +80,7 @@ for (let i = 0; i < buttonWork.length; i += 1) {
   });
 }
 
-xButton = document.querySelector('.close');
+let xButton = document.querySelector('.close');
 
 xButton.addEventListener('click', () => {
   popup.classList.remove('visible');
