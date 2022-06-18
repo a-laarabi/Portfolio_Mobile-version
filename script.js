@@ -60,7 +60,6 @@ for (let i = 0; i < workObject.length; i += 1) {
       </ul>
       <button type="button" class="see">See Project</button>
   `;
-
   section.appendChild(image);
   section.appendChild(sectionInside);
   li.appendChild(section);
@@ -74,6 +73,19 @@ const popup = document.querySelector('.projectPopup');
 for (let i = 0; i < buttonWork.length; i += 1) {
   buttonWork[i].addEventListener('click', () => {
     popup.classList.add('visible');
+    console.log(i);
+
+    const popupTitle = document.querySelector('.popupTitle');
+    popupTitle.textContent = workObject[i].title;
+
+    const projectTitle = document.querySelector('.canopy');
+    projectTitle.textContent = workObject[i].projectDetail[0];
+
+    const projectInfo = document.querySelector('.detail');
+    projectInfo.textContent = workObject[i].projectDetail[1];
+
+    const projectYear = document.querySelector('.year');
+    projectYear.textContent = workObject[i].projectDetail[2];
   });
 }
 
