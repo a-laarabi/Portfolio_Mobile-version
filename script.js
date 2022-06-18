@@ -44,7 +44,7 @@ for (let i = 0; i < workObject.length; i += 1) {
   image.src = workObject[i].img;
   if (i % 2 === 0) { image.classList.add('left'); } else { image.classList.add('right'); }
   const sectionInside = document.createElement('section');
-  if (i % 2 === 0){ sectionInside.classList.add('right', 'text-inside_project'); } else { sectionInside.classList.add('left', 'text-inside_project'); }
+  if (i % 2 === 0) { sectionInside.classList.add('right', 'text-inside_project'); } else { sectionInside.classList.add('left', 'text-inside_project'); }
   sectionInside.innerHTML = `
       <h3><a href="#">${workObject[i].title}</a></h3>
       <ul class="project-detail">
