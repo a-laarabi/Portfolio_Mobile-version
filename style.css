@@ -529,6 +529,7 @@ textarea {
 
   .projectPopup .popup-info {
     display: flex;
+    margin-top: 59px;
   }
 
   .projectPopup .button1 {
@@ -541,10 +542,6 @@ textarea {
 
   .projectPopup .info {
     width: 50%;
-}
-
-  .popup-info {
-    margin-top: 59px;
   }
 }
 
@@ -603,7 +600,7 @@ textarea {
   overflow-y: scroll;
 }
 
-.projectPopup.visible{
+.projectPopup.visible {
   display: flex;
 }
 
