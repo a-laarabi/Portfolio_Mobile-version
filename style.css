@@ -527,7 +527,25 @@ textarea {
 
   /* ########## Project popup ########## */
 
-  
+  .projectPopup .popup-info {
+    display: flex;
+  }
+
+  .projectPopup .button1 {
+    float: left;
+  }
+
+  .projectPopup .button2 {
+    float: right;
+  }
+
+  .projectPopup .info {
+    width: 50%;
+}
+
+  .popup-info {
+    margin-top: 59px;
+  }
 }
 
 .menu-popup {
@@ -582,9 +600,7 @@ textarea {
   justify-content: center;
   align-items: center;
   display: none;
-  /* display: flex; */
   overflow-y: scroll;
-  
 }
 
 .projectPopup.visible{
@@ -598,16 +614,32 @@ textarea {
   border: 1px solid #ebecf0;
   padding: 16px;
   background-color: #fff;
+  margin-top: 60%;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .projectPopup .pic {
   width: 100%;
 }
 
-.projectPopup .popup-info {
+.projectPopup .info {
+  font-size: 16px;
+}
+
+.projectPopup .close {
+  width: 12px;
+  float: right;
+}
+
+.projectPopup .see img {
+  width: 16px;
+}
+
+/* .projectPopup .popup-info {
   display: flex;
   gap: 3%;
-}
+} */
 
 /* .projectPopup * {
   border: 1px solid black;

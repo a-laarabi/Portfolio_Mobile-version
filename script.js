@@ -82,3 +82,9 @@ for (let i = 0; i < buttonWork.length; i += 1) {
     popup.classList.add('visible');
   });
 }
+
+xButton = document.querySelector('.close');
+
+xButton.addEventListener('click', () => {
+  popup.classList.remove('visible');
+});
