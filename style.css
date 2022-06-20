@@ -4,12 +4,17 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
 
 body {
   background-color: #e5e5e5;
+  font-family: "Poppins", sans-serif;
 }
 
 ul {
@@ -435,10 +440,12 @@ textarea {
 
   .canopy {
     font-size: 18px;
+    font-weight: 500;
   }
 
   .project_info {
     font-size: 18px;
+    font-weight: 400;
   }
 
   .work p {
@@ -522,6 +529,25 @@ textarea {
   textarea {
     border-radius: 0;
   }
+
+  /* ########## Project popup ########## */
+
+  .projectPopup .popup-info {
+    display: flex;
+    margin-top: 59px;
+  }
+
+  .projectPopup .button1 {
+    float: left;
+  }
+
+  .projectPopup .button2 {
+    float: right;
+  }
+
+  .projectPopup .info {
+    width: 50%;
+  }
 }
 
 .menu-popup {
@@ -561,6 +587,55 @@ textarea {
 
 .menu-popup.visible {
   display: block;
+}
+
+/* ########## Project popup ########## */
+
+.projectPopup {
+  background-color: rgba(193, 199, 208, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  overflow-y: scroll;
+}
+
+.projectPopup.visible {
+  display: flex;
+}
+
+.Inside-projectPopup {
+  width: 80%;
+  min-height: 90vh;
+  border-radius: 18px;
+  border: 1px solid #ebecf0;
+  padding: 16px;
+  background-color: #fff;
+  margin-top: 60%;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.projectPopup .pic {
+  width: 100%;
+}
+
+.projectPopup .info {
+  font-size: 16px;
+}
+
+.projectPopup .close {
+  width: 12px;
+  float: right;
+}
+
+.projectPopup .see img {
+  width: 16px;
 }
 
 .erreur {
