@@ -638,17 +638,17 @@ textarea {
   width: 16px;
 }
 
-.erreur{
-  color: #D8000C;
-  font-size:12px;
-  font-weight : 500;
+.erreur {
+  color: #d8000c;
+  font-size: 12px;
+  font-weight: 500;
 }
 
-.erreur.visible{
-  background-color: #FFD2D2;
-  padding:10px;
-  border-radius : 30px;
-  width : 50%;
+.erreur.visible {
+  background-color: #ffd2d2;
+  padding: 10px;
+  border-radius: 30px;
+  width: 50%;
   margin: auto;
-  margin-top:10px;
+  margin-top: 10px;
 }
