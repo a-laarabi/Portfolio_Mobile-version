@@ -683,8 +683,9 @@ text-align: left;
 }
 
 .projectPopup .close {
-  width: 20px;
+  width: 1.2rem;
   float: right;
+  margin-right: 12px;
 }
 
 .projectPopup .see img {
