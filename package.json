@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "lighthouse": "^9.6.2"
+    "lighthouse": "^9.6.2",
+    "update": "^0.7.4"
   },
   "name": "portfolio_mobile-version",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
@@ -8,7 +9,7 @@
   "main": "menu.js",
   "devDependencies": {
     "hint": "^7.0.1",
-    "stylelint": "^13.13.1",
+    "stylelint": "^14.4.0",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
