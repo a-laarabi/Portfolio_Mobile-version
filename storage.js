@@ -13,11 +13,12 @@ function dataChange() {
 
 document.addEventListener('putData', () => {
   const formValue = localStorage.getItem('formData');
-  const dataObject = JSON.parse(formValue);
-  if(dataObject) {
-    formNames.value = formValue.name;
-    mail.value = formValue.mail;
-    comment.value = formValue.comment;
+  
+  if (formValue) {
+    const dataObject = JSON.parse(formValue);
+    formNames.value = dataObject.name;
+    mail.value = dataObject.mail;
+    comment.value = dataObject.comment;
   };
 });
 
