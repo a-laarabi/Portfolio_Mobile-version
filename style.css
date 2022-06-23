@@ -160,17 +160,61 @@ h2 {
 }
 
 .project-language {
-  margin: 10px 0;
+  margin: 10px;
   display: flex;
-  margin-left: 16px;
+ 
 }
+
+.popup-info  {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  height: auto;
+  padding: 10px 15px;
+  margin-left: 0;
+  }
+
+.info {
+  margin: 0;
+  padding: 0;
+ }
+
+.inside_popup-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-left: 20px;
+}
+
+.btn-group  {
+  display: flex;
+  margin: 0;
+  padding-left: -10px;
+  align-self: start;
+}
+
+.seperator {
+   width: 100%;
+   height: 17px;
+   margin: 0;
+   padding: 0;
+  }
+
+  .seperator > img {
+    display: block;
+    width: 306px;
+    margin-left: 10px;
+  }
 
 .project-language li {
   background-color: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
   color: #6070ff;
-  margin: 2px;
+  margin: 4px;
+  
 }
 
 .canopy {
@@ -603,6 +647,7 @@ textarea {
   align-items: center;
   display: none;
   overflow-y: scroll;
+  
 }
 
 .projectPopup.visible {
@@ -623,6 +668,7 @@ textarea {
 
 .projectPopup .pic {
   width: 100%;
+  height: auto;
 }
 
 .projectPopup .info {
@@ -636,6 +682,7 @@ textarea {
 
 .projectPopup .see img {
   width: 16px;
+  
 }
 
 .erreur {

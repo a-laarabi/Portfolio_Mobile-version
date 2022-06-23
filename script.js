@@ -66,7 +66,7 @@ for (let i = 0; i < workObject.length; i += 1) {
           <li><a href="#">${workObject[i].languages[2]}</a></li>
           <li><a href="#">${workObject[i].languages[3]}</a></li>
       </ul>
-      <button type="button" class="see">See Project</button>
+     <button type="button" class="see">See Project</button>
   `;
   section.appendChild(image);
   section.appendChild(sectionInside);
