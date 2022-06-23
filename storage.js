@@ -6,17 +6,19 @@ function dataChange() {
   const data = {
     name: formNames.value,
     mail: mail.value,
-    comment: comment.value
+    comment: comment.value,
   };
-  localStorage['formData'] = JSON.stringify(data);
+  localStorage.setItem('formData', JSON.stringify(data));
 }
 
 document.addEventListener('putData', () => {
   const formValue = localStorage.getItem('formData');
   const dataObject = JSON.parse(formValue);
-  formNames.value = formValue.name;
-  mail.value = formValue.mail;
-  comment.value = formValue.comment;
+  if(dataObject) {
+    formNames.value = formValue.name;
+    mail.value = formValue.mail;
+    comment.value = formValue.comment;
+  };
 });
 
 formNames.onchange = dataChange;
