@@ -640,8 +640,8 @@ textarea {
 
 .erreur{
   color: #D8000C;
-  font-size:12px;
-  font-weight : 500;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .erreur.visible{
