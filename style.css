@@ -644,11 +644,11 @@ textarea {
   font-weight: 500;
 }
 
-.erreur.visible{
+.erreur.visible {
   background-color: #FFD2D2;
-  padding:10px;
-  border-radius : 30px;
-  width : 50%;
+  padding: 10px;
+  border-radius: 30px;
+  width: 50%;
   margin: auto;
-  margin-top:10px;
+  margin-top: 10px;
 }
